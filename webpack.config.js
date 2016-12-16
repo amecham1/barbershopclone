@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
   context: __dirname,
-  entry: './js/BarberApp.js',
+  entry: './js/BikeApp.js',
   devtool: 'eval',
   output: {
     path: path.join(__dirname, '/public'),
@@ -36,6 +36,18 @@ module.exports = {
         include: path.resolve(__dirname, 'js'),
         test: /\.js$/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              url: false
+            }
+          }
+        ]
       }
     ]
   }
