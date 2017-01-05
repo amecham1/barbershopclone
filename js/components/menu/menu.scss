@@ -2,12 +2,21 @@
   background-color: #000000;
   width: 100vw;
   padding: 13px;
-  display: flex;
-  justify-content: center;
+  overflow: auto;
 }
 .cervelo-title{
+  width: 20vw;
   color: #FF0000;
   font-family: 'Work Sans', sans-serif, serif;
   font-size: 1.7em;
   transform: scale(1.5,0.7);
+  // float: right;
+  margin: 0 auto 0 auto;
+}
+.ham-menu{
+  // width: 1vw;
+  color:white;
+  margin-right: 15px;
+  padding-top: 2px;
+  float: right;
 }
